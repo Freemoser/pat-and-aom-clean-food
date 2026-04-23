@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Prep - Savory Bites Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" class="brand">
+                        <img class="brand-logo" src="images/logo.png" alt="P&O Clean Food" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80';">
+                        <span class="brand-text">P&amp;O Clean Food</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="meal-prep.html" class="nav-cta active">Meal Prep</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="meal-prep-hero">
+            <div class="container">
+                <h1>Healthy Meal Prep Solutions</h1>
+                <p>Fresh, nutritious, and delicious meals prepared weekly for your convenience</p>
+            </div>
+        </section>
+
+        <section class="menu-selection" id="menu-selection">
+            <div class="container">
+                <h2>Select Your Packs</h2>
+                <div class="meal-filters">
+                    <button class="filter-btn active" data-filter="all">All Packs</button>
+                    <button class="filter-btn" data-filter="bowl">Bowls</button>
+                    <button class="filter-btn" data-filter="wrap">Wraps</button>
+                    <button class="filter-btn" data-filter="trial">Trial</button>
+                </div>
+                
+                <div class="meals-grid">
+                    <div class="meal-item" data-category="bowl" data-name="Chicken Rice Bowl x5" data-price="455" data-currency="THB" data-kcal="2871.3" data-protein="274.4" data-carbs="300.5" data-fat="57.2">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Chicken Rice Bowl x5">
+                        <div class="meal-info">
+                            <h3>Chicken Rice Bowl x5</h3>
+                            <p class="meal-price">฿455 / pack</p>
+                            <div class="meal-nutrition">
+                                <span>2871.3 kcal</span>
+                                <span>274.4g protein</span>
+                                <span>300.5g carbs</span>
+                                <span>57.2g fat</span>
+                            </div>
+                            <div class="meal-actions">
+                                <input type="number" class="meal-quantity" value="0" min="0" max="10">
+                                <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meal-item" data-category="bowl" data-name="Chicken Rice Bowl x10" data-price="842" data-currency="THB" data-kcal="5742.5" data-protein="548.9" data-carbs="600.9" data-fat="114.4">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Chicken Rice Bowl x10">
+                        <div class="meal-info">
+                            <h3>Chicken Rice Bowl x10</h3>
+                            <p class="meal-price">฿842 / pack</p>
+                            <div class="meal-nutrition">
+                                <span>5742.5 kcal</span>
+                                <span>548.9g protein</span>
+                                <span>600.9g carbs</span>
+                                <span>114.4g fat</span>
+                            </div>
+                            <div class="meal-actions">
+                                <input type="number" class="meal-quantity" value="0" min="0" max="10">
+                                <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meal-item" data-category="bowl" data-name="Pad Kapao x5" data-price="455" data-currency="THB" data-kcal="2824.4" data-protein="267.3" data-carbs="297.9" data-fat="53.5">
+                        <img src="https://images.unsplash.com/photo-1604908554162-45f4b0d7d6b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Pad Kapao x5">
+                        <div class="meal-info">
+                            <h3>Pad Kapao x5</h3>
+                            <p class="meal-price">฿455 / pack</p>
+                            <div class="meal-nutrition">
+                                <span>2824.4 kcal</span>
+                                <span>267.3g protein</span>
+                                <span>297.9g carbs</span>
+                                <span>53.5g fat</span>
+                            </div>
+                            <div class="meal-actions">
+                                <input type="number" class="meal-quantity" value="0" min="0" max="10">
+                                <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meal-item" data-category="bowl" data-name="Pad Kapao x10" data-price="842" data-currency="THB" data-kcal="5648.8" data-protein="534.6" data-carbs="595.8" data-fat="106.9">
+                        <img src="https://images.unsplash.com/photo-1604908176982-6c6d61c4b2f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Pad Kapao x10">
+                        <div class="meal-info">
+                            <h3>Pad Kapao x10</h3>
+                            <p class="meal-price">฿842 / pack</p>
+                            <div class="meal-nutrition">
+                                <span>5648.8 kcal</span>
+                                <span>534.6g protein</span>
+                                <span>595.8g carbs</span>
+                                <span>106.9g fat</span>
+                            </div>
+                            <div class="meal-actions">
+                                <input type="number" class="meal-quantity" value="0" min="0" max="10">
+                                <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meal-item" data-category="bowl" data-name="Egg &amp; Chicken Bowl x5" data-price="455" data-currency="THB" data-kcal="1616.0" data-protein="174.4" data-carbs="129.7" data-fat="42.4">
+                        <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Egg &amp; Chicken Bowl x5">
+                        <div class="meal-info">
+                            <h3>Egg &amp; Chicken Bowl x5</h3>
+                            <p class="meal-price">฿455 / pack</p>
+                            <div class="meal-nutrition">
+                                <span>1616.0 kcal</span>
+                                <span>174.4g protein</span>
+                                <span>129.7g carbs</span>
+                                <span>42.4g fat</span>
+                            </div>
+                            <div class="meal-actions">
+                                <input type="number" class="meal-quantity" value="0" min="0" max="10">
+                                <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meal-item" data-category="bowl" data-name="Egg &amp; Chicken Bowl x10" data-price="842" data-currency="THB" data-kcal="3232.0" data-protein="348.8" data-carbs="259.4" data-fat="84.8">
+                        <img src="https://images.unsplash.com/photo-1617196034796-73c9a83994c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Egg &amp; Chicken Bowl x10">
+                        <div class="meal-info">
+                            <h3>Egg &amp; Chicken Bowl x10</h3>
+                            <p class="meal-price">฿842 / pack</p>
+                            <div class="meal-nutrition">
+                                <span>3232.0 kcal</span>
+                                <span>348.8g protein</span>
+                                <span>259.4g carbs</span>
+                                <span>84.8g fat</span>
+                            </div>
+                            <div class="meal-actions">
+                                <input type="number" class="meal-quantity" value="0" min="0" max="10">
+                                <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meal-item" data-category="wrap" data-name="Protein Wrap x5" data-price="547" data-currency="THB" data-kcal="2542.5" data-protein="239.1" data-carbs="213.7" data-fat="74.5">
+                        <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Protein Wrap x5">
+                        <div class="meal-info">
+                            <h3>Protein Wrap x5</h3>
+                            <p class="meal-price">฿547 / pack</p>
+                            <div class="meal-nutrition">
+                                <span>2542.5 kcal</span>
+                                <span>239.1g protein</span>
+                                <span>213.7g carbs</span>
+                                <span>74.5g fat</span>
+                            </div>
+                            <div class="meal-actions">
+                                <input type="number" class="meal-quantity" value="0" min="0" max="10">
+                                <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meal-item" data-category="wrap" data-name="Protein Wrap x10" data-price="1012" data-currency="THB" data-kcal="5085.0" data-protein="478.1" data-carbs="427.4" data-fat="149.0">
+                        <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Protein Wrap x10">
+                        <div class="meal-info">
+                            <h3>Protein Wrap x10</h3>
+                            <p class="meal-price">฿1,012 / pack</p>
+                            <div class="meal-nutrition">
+                                <span>5085.0 kcal</span>
+                                <span>478.1g protein</span>
+                                <span>427.4g carbs</span>
+                                <span>149.0g fat</span>
+                            </div>
+                            <div class="meal-actions">
+                                <input type="number" class="meal-quantity" value="0" min="0" max="10">
+                                <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meal-item" data-category="trial" data-name="Trial Pack (2x each = 8 meals)" data-price="732" data-currency="THB" data-kcal="3941.7" data-protein="382.1" data-carbs="376.7" data-fat="91.0">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Trial Pack">
+                        <div class="meal-info">
+                            <h3>Trial Pack (2x each = 8 meals)</h3>
+                            <p class="meal-price">฿732 / pack</p>
+                            <div class="meal-nutrition">
+                                <span>3941.7 kcal</span>
+                                <span>382.1g protein</span>
+                                <span>376.7g carbs</span>
+                                <span>91.0g fat</span>
+                            </div>
+                            <div class="meal-actions">
+                                <input type="number" class="meal-quantity" value="0" min="0" max="10">
+                                <button class="btn btn-sm add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-summary" id="cart-summary">
+            <div class="container">
+                <h2>Your Meal Prep Cart</h2>
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                <div class="cart-total">
+                    <p>Total: <span id="cart-total">฿0</span></p>
+                    <button class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery-info">
+            <div class="container">
+                <h2>Delivery Information</h2>
+                <div class="delivery-grid">
+                    <div class="delivery-item">
+                        <div class="delivery-icon">?</div>
+                        <h3>Fresh Delivery</h3>
+                        <p>Meals delivered fresh to your doorstep on your schedule</p>
+                    </div>
+                    <div class="delivery-item">
+                        <div class="delivery-icon">?</div>
+                        <h3>Eco-Friendly Packaging</h3>
+                        <p>Sustainable, recyclable containers that keep food fresh</p>
+                    </div>
+                    <div class="delivery-item">
+                        <div class="delivery-icon">?</div>
+                        <h3>Flexible Scheduling</h3>
+                        <p>Choose delivery days and times that work for your lifestyle</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Savory Bites Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="checkout-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+        <div class="modal__backdrop" id="checkout-backdrop"></div>
+        <div class="modal__panel" role="document">
+            <div class="modal__header">
+                <h3 id="checkout-title">Checkout via WhatsApp</h3>
+                <button class="modal__close" id="checkout-close" type="button" aria-label="Close">×</button>
+            </div>
+            <div class="modal__body">
+                <div class="form-row">
+                    <label class="form-label" for="customer-name">Name</label>
+                    <input class="form-input" id="customer-name" type="text" placeholder="Your name" autocomplete="name" />
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">Pickup oder Delivery</div>
+                    <div class="segmented">
+                        <label class="segmented__item">
+                            <input type="radio" name="fulfillment" value="pickup" checked />
+                            <span>Pickup</span>
+                        </label>
+                        <label class="segmented__item">
+                            <input type="radio" name="fulfillment" value="delivery" />
+                            <span>Delivery</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal__preview">
+                    <div class="modal__preview-title">Nachricht Vorschau</div>
+                    <pre class="modal__preview-box" id="wa-preview"></pre>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <button class="btn btn-secondary" id="checkout-cancel" type="button">Cancel</button>
+                <button class="btn btn-primary" id="checkout-confirm" type="button">Open WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mini-cart" id="mini-cart" style="display: none;">
+        <div class="mini-cart__content">
+            <div class="mini-cart__items" id="mini-cart-items"></div>
+            <div class="mini-cart__right">
+                <div class="mini-cart__total" id="mini-cart-total">฿0</div>
+                <button class="btn btn-primary btn-sm" id="mini-cart-open">View cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="meal-prep.js"></script>
+</body>
+</html>
