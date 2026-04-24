@@ -1,10 +1,10 @@
-# Savory Bites Restaurant Website
+# Pat & Aum Clean Food Website
 
 A modern, responsive restaurant website with a dedicated meal prep ordering system.
 
 ## Features
 
-### Main Restaurant Website (`index.html`)
+### Main Website (`index.html`)
 - **Hero Section**: Eye-catching landing area with call-to-action buttons
 - **Menu Display**: Grid layout showcasing signature dishes with images and pricing
 - **About Section**: Restaurant story and philosophy

@@ -3,7 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savory Bites Restaurant</title>
+    <title>Pat &amp; Aum Clean Food</title>
+    <!-- SEO: Update the content values below to match your business (IMPORTANT for Google + Instagram link previews) -->
+    <!-- SEO TODO: Change this description to your real short marketing text (max ~160 chars). -->
+    <meta name="description" content="Pat &amp; Aum Clean Food – healthy Thai meal prep and clean food in Thailand. Order via WhatsApp for pickup or delivery.">
+    <!-- SEO TODO: Replace with your public website URL once deployed (e.g. https://pat-aum-clean-food.com/) -->
+    <link rel="canonical" href="https://example.com/">
+
+    <!-- Social Preview (Instagram/Facebook/WhatsApp) -->
+    <meta property="og:type" content="website">
+    <!-- SEO TODO: Replace with your deployed homepage URL -->
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:title" content="Pat &amp; Aum Clean Food">
+    <meta property="og:description" content="Healthy Thai meal prep and clean food. Order via WhatsApp for pickup or delivery.">
+    <!-- SEO TODO: Replace with a real public image URL (1200x630) once deployed. For now we point to the local logo. -->
+    <meta property="og:image" content="images/logo.png">
+
+    <!-- Twitter/X (also used by some preview generators) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pat &amp; Aum Clean Food">
+    <meta name="twitter:description" content="Healthy Thai meal prep and clean food. Order via WhatsApp for pickup or delivery.">
+    <meta name="twitter:image" content="images/logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/logo.png">
     <link rel="apple-touch-icon" href="images/logo.png">
@@ -15,8 +35,8 @@
             <div class="nav-container">
                 <div class="logo">
                     <a href="#home" class="brand">
-                        <img class="brand-logo" src="images/logo.png" alt="P&O Clean Food" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80';">
-                        <span class="brand-text">P&amp;O Clean Food</span>
+                        <img class="brand-logo" src="images/logo-landing.png" alt="Pat &amp; Aum Clean Food" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80';">
+                        <span class="brand-text">P&amp;M Clean Food</span>
                     </a>
                 </div>
                 <ul class="nav-menu">
@@ -26,10 +46,13 @@
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="meal-prep.html" class="nav-cta">Meal Prep</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="nav-actions">
+                    <a href="meal-prep.html" class="nav-cta mobile-cta">Meal Prep</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -38,15 +61,19 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h2>Experience Culinary Excellence</h2>
-                <p>Fresh ingredients, innovative recipes, and unforgettable dining experiences</p>
+                <h2>Eat Clean. Taste Thailand.</h2>
+                <p>Healthy Thai cuisine crafted for modern living.</p>
+                <div class="hero-image hero-image--inline">
+                    <img src="images/hero.png" alt="Restaurant interior">
+                </div>
+                <p>We combine traditional Thai recipes with a clean, balanced approach.<br>High-quality ingredients, mindful cooking, and meals that keep you energized — every day.</p>
                 <div class="hero-buttons">
                     <a href="#menu" class="btn btn-primary">View Menu</a>
                     <a href="meal-prep.html" class="btn btn-secondary">Order Meal Prep</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Restaurant interior">
+            <div class="hero-image hero-image--main">
+                <img src="images/hero.png" alt="Restaurant interior">
             </div>
         </section>
 
@@ -55,7 +82,8 @@
                 <h2>Walk-in Menu</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1604908554162-45f4b0d7d6b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Pad Kapao Chicken">
+                        <!-- Place image at: images/walkin/pad-kapao-chicken.jpg -->
+                        <img src="images/walkin/pad-kapao-chicken.jpg" alt="Pad Kapao Chicken" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Pad Kapao Chicken</h3>
                         <p class="price">฿99</p>
                         <div class="menu-nutrition">
@@ -66,7 +94,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1604908176982-6c6d61c4b2f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Massaman Curry Chicken">
+                        <!-- Place image at: images/walkin/massaman-curry-chicken.jpg -->
+                        <img src="images/walkin/massaman-curry-chicken.jpg" alt="Massaman Curry Chicken" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Massaman Curry Chicken</h3>
                         <p class="price">฿119</p>
                         <div class="menu-nutrition">
@@ -77,7 +106,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Pad Thai Protein">
+                        <!-- Place image at: images/walkin/pad-thai-protein.jpg -->
+                        <img src="images/walkin/pad-thai-protein.jpg" alt="Pad Thai Protein" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Pad Thai Protein</h3>
                         <p class="price">฿119</p>
                         <div class="menu-nutrition">
@@ -88,7 +118,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Caesar Salad">
+                        <!-- Place image at: images/walkin/caesar-salad.jpg -->
+                        <img src="images/walkin/caesar-salad.jpg" alt="Caesar Salad" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Caesar Salad</h3>
                         <p class="price">฿129</p>
                         <div class="menu-nutrition">
@@ -99,7 +130,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Chicken Rice Bowl">
+                        <!-- Place image at: images/walkin/chicken-rice-bowl.jpg -->
+                        <img src="images/walkin/chicken-rice-bowl.jpg" alt="Chicken Rice Bowl" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Chicken Rice Bowl</h3>
                         <p class="price">฿99</p>
                         <div class="menu-nutrition">
@@ -110,7 +142,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Protein Wrap">
+                        <!-- Place image at: images/walkin/protein-wrap.jpg -->
+                        <img src="images/walkin/protein-wrap.jpg" alt="Protein Wrap" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Protein Wrap</h3>
                         <p class="price">฿119</p>
                         <div class="menu-nutrition">
@@ -121,7 +154,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Egg &amp; Chicken Breakfast Bowl">
+                        <!-- Place image at: images/walkin/egg-chicken-breakfast-bowl.jpg -->
+                        <img src="images/walkin/egg-chicken-breakfast-bowl.jpg" alt="Egg &amp; Chicken Breakfast Bowl" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Egg &amp; Chicken Breakfast Bowl</h3>
                         <p class="price">฿99</p>
                         <div class="menu-nutrition">
@@ -132,7 +166,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Avocado Chicken Salad">
+                        <!-- Place image at: images/walkin/avocado-chicken-salad.jpg -->
+                        <img src="images/walkin/avocado-chicken-salad.jpg" alt="Avocado Chicken Salad" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Avocado Chicken Salad</h3>
                         <p class="price">฿149</p>
                         <div class="menu-nutrition">
@@ -143,7 +178,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Low-Carb Zoodle Bowl">
+                        <!-- Place image at: images/walkin/low-carb-zoodle-bowl.jpg -->
+                        <img src="images/walkin/low-carb-zoodle-bowl.jpg" alt="Low-Carb Zoodle Bowl" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Low-Carb Zoodle Bowl</h3>
                         <p class="price">฿129</p>
                         <div class="menu-nutrition">
@@ -154,7 +190,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Papaya Egg Salad (3 Eggs)">
+                        <!-- Place image at: images/walkin/papaya-egg-salad-3-eggs.jpg -->
+                        <img src="images/walkin/papaya-egg-salad-3-eggs.jpg" alt="Papaya Egg Salad (3 Eggs)" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Papaya Egg Salad (3 Eggs)</h3>
                         <p class="price">฿119</p>
                         <div class="menu-nutrition">
@@ -165,7 +202,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1604908554162-45f4b0d7d6b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Frozen Pad Kapao">
+                        <!-- Place image at: images/walkin/frozen-pad-kapao.jpg -->
+                        <img src="images/walkin/frozen-pad-kapao.jpg" alt="Frozen Pad Kapao" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Frozen Pad Kapao</h3>
                         <p class="price">฿99</p>
                         <div class="menu-nutrition">
@@ -176,7 +214,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Frozen Chicken Rice Bowl">
+                        <!-- Place image at: images/walkin/frozen-chicken-rice-bowl.jpg -->
+                        <img src="images/walkin/frozen-chicken-rice-bowl.jpg" alt="Frozen Chicken Rice Bowl" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Frozen Chicken Rice Bowl</h3>
                         <p class="price">฿99</p>
                         <div class="menu-nutrition">
@@ -187,7 +226,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1617196034796-73c9a83994c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Frozen Egg &amp; Chicken Bowl">
+                        <!-- Place image at: images/walkin/frozen-egg-chicken-bowl.jpg -->
+                        <img src="images/walkin/frozen-egg-chicken-bowl.jpg" alt="Frozen Egg &amp; Chicken Bowl" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Frozen Egg &amp; Chicken Bowl</h3>
                         <p class="price">฿99</p>
                         <div class="menu-nutrition">
@@ -198,7 +238,8 @@
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Frozen Protein Wrap">
+                        <!-- Place image at: images/walkin/frozen-protein-wrap.jpg -->
+                        <img src="images/walkin/frozen-protein-wrap.jpg" alt="Frozen Protein Wrap" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                         <h3>Frozen Protein Wrap</h3>
                         <p class="price">฿119</p>
                         <div class="menu-nutrition">
@@ -243,8 +284,17 @@
                 <div class="about-content">
                     <div class="about-text">
                         <h2>Our Story</h2>
-                        <p>Founded in 2015, Savory Bites has been dedicated to bringing exceptional dining experiences to our community. Our chefs combine traditional techniques with modern innovation to create dishes that delight and inspire.</p>
-                        <p>We source the finest local ingredients and partner with trusted suppliers to ensure every dish meets our high standards of quality and taste.</p>
+                        <!-- TODO/ÄNDERN: Ersetze diesen Text mit eurer echten Story (Über uns) -->
+                        <p>Hi, we’re Pat &amp; Aom.</p>
+                        <p>We started this journey with a simple idea:<br>We love Thai food — and we love eating clean.</p>
+                        <p>As fitness enthusiasts, we always struggled to find meals that are both truly healthy and full of authentic Thai flavor. So we decided to create it ourselves.</p>
+                        <p>Our mission is to bring Thai cuisine to a new level —<br>clean, balanced, and made for your lifestyle.</p>
+                        <p>That means:<br>No unnecessary oil.<br>No added sugar.<br>Just real ingredients, traditional recipes, and food that fuels your body.</p>
+                        <p>We’re building more than just one place —<br>we’re building a concept. A growing network of clean Thai kitchens that make healthy eating easy, accessible, and exciting.</p>
+                        <p>You can follow our journey on social media as we grow, experiment, and keep improving every single dish.</p>
+                        <p>Right now, you can already order and be part of our story.<br>And soon, we’ll be ready to welcome you in our restaurant.</p>
+                        <p>One thing you shouldn’t miss:<br>our Meal Prep concept — designed for active people who want to stay consistent without sacrificing taste.</p>
+                        <p>At the end of the day, everything we do is simple:<br>We want to make it easy for you to eat fresh, healthy, and truly delicious Thai food — anytime.</p>
                     </div>
                     <div class="about-image">
                         <img src="https://images.unsplash.com/photo-1556761175-b413da4baf28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Chef cooking">
@@ -259,15 +309,18 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <h3>Address</h3>
-                        <p>123 Gourmet Avenue<br>Culinary District, NY 10001</p>
+                        <!-- TODO/ÄNDERN: Trage hier eure echte Adresse ein -->
+                        <p>YOUR STREET + NUMBER<br>YOUR CITY, YOUR POSTAL CODE, YOUR COUNTRY</p>
                     </div>
                     <div class="contact-item">
                         <h3>Hours</h3>
-                        <p>Monday-Friday: 11am-10pm<br>Saturday-Sunday: 10am-11pm</p>
+                        <!-- TODO/ÄNDERN: Trage hier eure echten Öffnungszeiten ein -->
+                        <p>Monday-Friday: YOUR HOURS<br>Saturday-Sunday: YOUR HOURS</p>
                     </div>
                     <div class="contact-item">
                         <h3>Reservation</h3>
-                        <p>Phone: (555) 123-4567<br>Email: info@savorybites.com</p>
+                        <!-- TODO/ÄNDERN: Trage hier eure echte Telefonnummer + E-Mail ein -->
+                        <p>Phone: YOUR PHONE<br>Email: YOUR EMAIL</p>
                     </div>
                 </div>
             </div>
@@ -276,7 +329,27 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Savory Bites Restaurant. All rights reserved.</p>
+            <p>&copy; 2026 Pat &amp; Aum Clean Food. All rights reserved. <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+            <div class="footer-social">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.86v5.49H9.45V9h3.42v1.56h.05c.48-.9 1.65-1.85 3.39-1.85 3.63 0 4.3 2.39 4.3 5.49v6.25zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5zM18 6.75a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 18 6.75z"/></svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.87.24-1.46 1.5-1.46H16.7V5a23 23 0 0 0-2.5-.13c-2.47 0-4.16 1.5-4.16 4.26V11H7.4v3h2.64v8h3.46z"/></svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M16.5 3c.7 2.8 2.3 4.4 5 5v3.1c-2.2 0-4-0.7-5.4-1.9v6.2c0 4-3.2 7.2-7.2 7.2S1.7 19.4 1.7 15.4s3.2-7.2 7.2-7.2c.4 0 .8 0 1.2.1v3.7c-.4-.1-.8-.2-1.2-.2-2 0-3.6 1.6-3.6 3.6S6.9 19 8.9 19s3.6-1.6 3.6-3.6V3h4z"/></svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.6l-5.2-6.7L5.3 22H2l7.3-8.4L1 2h6.7l4.7 6.1L18.9 2zm-1.2 18h1.7L6.7 3.9H4.9L17.7 20z"/></svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M21.6 7.2s-.2-1.6-.9-2.3c-.8-.9-1.7-.9-2.1-1C15.7 3.5 12 3.5 12 3.5h0s-3.7 0-6.6.4c-.4.1-1.3.1-2.1 1C2.6 5.6 2.4 7.2 2.4 7.2S2 9 2 10.8v1.7c0 1.8.4 3.6.4 3.6s.2 1.6.9 2.3c.8.9 1.9.9 2.4 1 1.7.2 6.3.4 6.3.4s3.7 0 6.6-.4c.4-.1 1.3-.1 2.1-1 .7-.7.9-2.3.9-2.3s.4-1.8.4-3.6v-1.7c0-1.8-.4-3.6-.4-3.6zM10 14.9V8.6l6 3.2-6 3.1z"/></svg>
+                </a>
+            </div>
         </div>
     </footer>
 

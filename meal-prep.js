@@ -2,12 +2,19 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const defaultFallbackImage = 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';
+    const applyFallback = (img) => {
+        if (img.dataset.fallbackApplied === '1') return;
+        img.dataset.fallbackApplied = '1';
+        img.src = img.dataset.fallback || defaultFallbackImage;
+    };
+
     document.querySelectorAll('img').forEach(img => {
-        img.addEventListener('error', () => {
-            if (img.dataset.fallbackApplied === '1') return;
-            img.dataset.fallbackApplied = '1';
-            img.src = img.dataset.fallback || defaultFallbackImage;
-        });
+        img.addEventListener('error', () => applyFallback(img));
+
+        // If the image is already broken by the time this runs
+        if (img.complete && img.naturalWidth === 0) {
+            applyFallback(img);
+        }
     });
 
     // Quantity steppers for mobile friendliness (+ / -)
@@ -171,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const customerNameInput = document.getElementById('customer-name');
     const waPreview = document.getElementById('wa-preview');
 
-    const waBaseUrl = 'https://wa.me/message/DOSBEK2MOQYUF1';
+    const waBaseUrl = 'https://wa.me/message/7NG53HA6BSWYJ1';
 
     function getFulfillment() {
         const selected = document.querySelector('input[name="fulfillment"]:checked');
@@ -183,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const fulfillment = getFulfillment();
         const lines = [];
 
-        lines.push('Hi P&O Clean Food, I would like to order:');
+        lines.push('Hi Pat & Aum Clean Food, I would like to order:');
         lines.push('');
         lines.push('Name: ' + (name || '-'));
         lines.push('Pickup oder Delivery: ' + fulfillment);
