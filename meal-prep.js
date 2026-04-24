@@ -178,11 +178,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const customerNameInput = document.getElementById('customer-name');
     const waPreview = document.getElementById('wa-preview');
 
-    const waBaseUrl = 'https://wa.me/message/7NG53HA6BSWYJ1';
+    const waPhoneNumber = '491781848258';
 
     function getFulfillment() {
         const selected = document.querySelector('input[name="fulfillment"]:checked');
         return selected ? selected.value : 'pickup';
+    }
+
+    function openWhatsApp(url) {
+        const opened = window.open(url, '_blank');
+        if (!opened) {
+            window.location.href = url;
+        }
     }
 
     function buildWhatsappMessage() {
@@ -268,8 +275,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             const msg = buildWhatsappMessage();
-            const url = waBaseUrl + '?text=' + encodeURIComponent(msg);
-            window.open(url, '_blank');
+            const url = waPhoneNumber
+                ? ('https://wa.me/' + waPhoneNumber + '?text=' + encodeURIComponent(msg))
+                : ('https://wa.me/?text=' + encodeURIComponent(msg));
+            openWhatsApp(url);
             closeCheckoutModal();
         });
     }

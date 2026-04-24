@@ -121,6 +121,10 @@ p {
     text-overflow: ellipsis;
 }
 
+.brand-text-short {
+    display: none;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -896,6 +900,14 @@ body {
         white-space: nowrap;
     }
 
+    .nav-actions {
+        flex: 0 0 auto;
+    }
+
+    .brand {
+        max-width: calc(100% - 150px);
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -989,6 +1001,23 @@ body {
 
     .nav-container {
         padding: 0.85rem 16px;
+    }
+
+    .mobile-cta {
+        padding: 0.42rem 0.85rem;
+        font-size: 0.88rem;
+    }
+
+    .brand {
+        max-width: calc(100% - 140px);
+    }
+
+    .brand-text-full {
+        display: none;
+    }
+
+    .brand-text-short {
+        display: inline;
     }
 
     .brand-logo {
