@@ -196,6 +196,13 @@ document.addEventListener('DOMContentLoaded', function() {
         lines.push('Name: ' + (name || '-'));
         lines.push('Pickup oder Delivery: ' + fulfillment);
 
+        lines.push('');
+        lines.push('Produkte:');
+
+        cart.forEach(item => {
+            lines.push('- ' + item.quantity + 'x ' + item.name);
+        });
+
         return lines.join('\n');
     }
 
