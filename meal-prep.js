@@ -176,7 +176,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const checkoutCancel = document.getElementById('checkout-cancel');
     const checkoutConfirm = document.getElementById('checkout-confirm');
     const customerNameInput = document.getElementById('customer-name');
-    const waPreview = document.getElementById('wa-preview');
 
     const waPhoneNumber = '491781848258';
 
@@ -186,10 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function openWhatsApp(url) {
-        const opened = window.open(url, '_blank');
-        if (!opened) {
-            window.location.href = url;
-        }
+        window.location.assign(url);
     }
 
     function buildWhatsappMessage() {
@@ -197,19 +193,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const fulfillment = getFulfillment();
         const lines = [];
 
-        lines.push('Hi Pat & Aum Clean Food, I would like to order:');
-        lines.push('');
         lines.push('Name: ' + (name || '-'));
         lines.push('Pickup oder Delivery: ' + fulfillment);
-        lines.push('');
-        lines.push('Produkte:');
-
-        cart.forEach(item => {
-            lines.push('- ' + item.quantity + 'x ' + item.name);
-        });
-
-        lines.push('');
-        lines.push('Total: ' + formatMoney(calculateTotal(), getCartCurrency()));
 
         return lines.join('\n');
     }
@@ -220,27 +205,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (customerNameInput) {
             customerNameInput.focus();
         }
-        if (waPreview) {
-            waPreview.textContent = buildWhatsappMessage();
-        }
     }
 
     function closeCheckoutModal() {
         if (!checkoutModal) return;
         checkoutModal.style.display = 'none';
     }
-
-    function refreshPreview() {
-        if (!waPreview) return;
-        waPreview.textContent = buildWhatsappMessage();
-    }
-
-    if (customerNameInput) {
-        customerNameInput.addEventListener('input', refreshPreview);
-    }
-    document.querySelectorAll('input[name="fulfillment"]').forEach(el => {
-        el.addEventListener('change', refreshPreview);
-    });
 
     if (checkoutBackdrop) checkoutBackdrop.addEventListener('click', closeCheckoutModal);
     if (checkoutClose) checkoutClose.addEventListener('click', closeCheckoutModal);
@@ -275,9 +245,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             const msg = buildWhatsappMessage();
-            const url = waPhoneNumber
-                ? ('https://wa.me/' + waPhoneNumber + '?text=' + encodeURIComponent(msg))
-                : ('https://wa.me/?text=' + encodeURIComponent(msg));
+            const url = 'https://api.whatsapp.com/send?phone=' + encodeURIComponent(waPhoneNumber) + '&text=' + encodeURIComponent(msg);
             openWhatsApp(url);
             closeCheckoutModal();
         });
