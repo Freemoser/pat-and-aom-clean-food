@@ -413,6 +413,133 @@ footer p {
     fill: #ffffff;
 }
 
+/* Blog */
+.blog-page,
+.blog-article-page {
+    background: var(--surface);
+    min-height: 100vh;
+}
+
+.blog-hero {
+    padding: 140px 20px 70px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--brand-50) 0%, #ffffff 100%);
+}
+
+.section-kicker {
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.blog-hero h1 {
+    color: var(--brand-900);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.blog-hero p {
+    color: var(--text-light);
+    font-size: 1.15rem;
+    margin: 0 auto;
+    max-width: 680px;
+}
+
+.blog-list-section {
+    padding: 70px 20px;
+}
+
+.blog-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.blog-card {
+    background: white;
+    border: 1px solid rgba(27, 91, 57, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+    padding: 1.75rem;
+}
+
+.blog-card__meta {
+    color: var(--primary);
+    font-size: 0.88rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.blog-card h2 {
+    font-size: 1.45rem;
+    margin-bottom: 0.75rem;
+}
+
+.blog-card h2 a {
+    color: var(--brand-900);
+    text-decoration: none;
+}
+
+.blog-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.blog-card__link {
+    color: var(--primary);
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.blog-article {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    line-height: 1.8;
+    margin-bottom: 70px;
+    margin-top: 130px;
+    max-width: 860px;
+    padding: 3rem;
+}
+
+.blog-back {
+    color: var(--primary);
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+}
+
+.blog-article h1 {
+    color: var(--brand-900);
+    font-size: 2.75rem;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+}
+
+.blog-article h2 {
+    color: var(--brand-900);
+    font-size: 1.7rem;
+    margin: 2rem 0 0.85rem;
+}
+
+.blog-article p,
+.blog-article li {
+    color: var(--text);
+    font-size: 1.05rem;
+}
+
+.blog-article ul {
+    background: var(--brand-50);
+    border-radius: 16px;
+    margin: 1rem 0 1.5rem;
+    padding: 1.25rem 1.5rem 1.25rem 2.25rem;
+}
+
 .mini-cart {
     position: fixed;
     left: 0;
